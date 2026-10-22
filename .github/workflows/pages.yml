@@ -25,6 +25,8 @@ jobs:
         run: test -s index.html && test -s merchant.html
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload the customer and merchant pages
         uses: actions/upload-pages-artifact@v3
         with:
